@@ -1,0 +1,64 @@
+.block {
+  padding: 10rpx 20rpx;
+  background-color: #fff; 
+  margin-bottom: 20rpx;
+}
+.header {
+  padding: 20rpx 30rpx; 
+  position: relative;
+  border-bottom: 1px dashed #DCDFE6;
+  color: #303133;
+  font-size: 34rpx;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  left:0;
+  top: 30%;
+  width: 10rpx;
+  height: 40%;
+  background-color: #2db6eb;
+}
+
+/* .header .more {
+  float: right;
+  color: #909399;
+  font-size: 20rpx;
+} */
+
+.fzMore {
+  display: inline;
+}
+
+.body {
+  padding: 20rpx 0; 
+}
+
+.info {
+  text-indent: 50rpx;
+}
+
+.service-title {
+  font-size: 30rpx;
+  margin-bottom: 5rpx;
+}
+
+.service-item {
+  margin-bottom: 20rpx;
+}
+
+.news-item {
+  position: relative;
+  padding: 10rpx 20rpx; 
+}
+.news-item::before {
+  content: "";
+  position: absolute;
+  left:0;
+  top: 20rpx;
+  width: 10rpx;
+  height: 10rpx;
+  background-color: #2db6eb;
+}
+

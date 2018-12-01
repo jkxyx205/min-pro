@@ -1,0 +1,30 @@
+<!--pages/me/bind/bind.wxml-->
+<van-cell
+  title="张家硕"
+  value=""
+ arrow-direction="down"
+/>
+
+<view class='add-child'>  
+<van-cell
+  title="+ 添加子女"
+  bind:click="addChild"
+/>
+</view>
+
+
+<van-dialog
+  use-slot
+  async-close
+  show="{{show}}"
+  show-cancel-button
+  bind:close="onClose"
+  bind:confirm="onConfirm"
+>
+  <van-field
+    value="{{userId}}"
+    label="绑定ID"
+    placeholder="请输入方正提供的ID"
+    bind:input="onConfirm"
+  />
+</van-dialog>

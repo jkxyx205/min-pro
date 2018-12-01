@@ -1,0 +1,4 @@
+/* pages/me/bind/bind.wxss */
+.add-child .van-cell {
+  color: #2db6eb;
+}

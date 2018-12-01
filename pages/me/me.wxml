@@ -1,0 +1,23 @@
+<!--pages/me/me.wxml-->
+<view class='header'>
+  <view>
+    <image src='/images/local/avatar.png' class='avatar'mode="widthFix"/>
+    <text class="nickname">方正教育</text>
+  </view>
+</view>
+
+<van-cell
+  title="我的子女"
+  value=""
+  is-link
+  arrow-direction="down"
+  url="/pages/me/bind/bind"
+/>
+
+<view class='logout' style='margin-top: 10rpx; text-align: center; color: #e84325;'>
+<van-cell
+  title="退出账号"
+/>
+</view>
+
+

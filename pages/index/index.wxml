@@ -1,0 +1,61 @@
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}" wx:key="index">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" mode="scaleToFill" style='width:100%'/>
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class="container">
+  <view class="block">
+    <view class="header">关于方正<!--<text class="more">查看更多</text>--></view>
+    <view class="body detail info">
+    方正教育，全名苏州方正启航文化艺术培训有限公司，位于苏州市吴中区郭巷街道郭新西路170号。现在有40多名中小学生，主要项目有晚托班，书法培训，一对一。
+    <navigator url="/pages/about/about" bindtap='fzMore' class='fzMore'>[查看更多]</navigator>
+    </view>
+  </view>
+
+
+   <view class="block service">
+    <view class="header">精品服务</view>
+    <view class="body detail">
+      <view class="service-item">
+      <van-row gutter="10">
+        <van-col span="8">
+          <image src='/images/local/1.jpg' style='width:100%; height: 120rpx;'></image>
+        </van-col>
+        <van-col span="16">
+          <view class='service-title'>晚托班</view>
+          <text>周一到周五，低年级的放学接，晚餐，作业辅导周一到周五，低年级的放学接，晚餐，作业辅导。</text>
+        </van-col>
+      </van-row>
+      </view>
+      <view class="service-item">
+      <van-row gutter="10">
+        <van-col span="8">
+          <image src='/images/local/2.jpg' style='width:100%; height: 120rpx;'></image>
+        </van-col>
+        <van-col span="16">
+          <view class='service-title'>书法培训</view>
+          <text>硬笔书法，写一手漂亮的好字。照耀前途。</text>
+        </van-col>
+      </van-row>
+      </view>
+    </view>
+  </view>
+
+
+   <view class="block news">
+    <view class="header">新闻咨询</view>
+    <view class="body detail">
+      <view class="news-item">哈尔滨冬泳健儿不惧寒冷下泳池健身</view>
+      <view class="news-item">遥隔四万里的“好知音” 习近平再访阿根廷</view>
+      <view class="news-item">发扬伙伴精神 同舟共济 一图读懂G20</view>
+      <view class="news-item">民进党败选却拿一个女人开刀 遭岛内网友怒怼</view>
+    </view>
+  </view>
+
+</view>
+
+

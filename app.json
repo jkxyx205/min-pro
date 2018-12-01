@@ -1,0 +1,56 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/about/about",
+    "pages/me/me",
+    "pages/homework/homework",
+    "pages/me/bind/bind"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#2db6eb",
+    "navigationBarTitleText": "方正教育"
+  },
+  "usingComponents": {
+    "van-button": "/plugins/vant-weapp/dist/button/index",
+    "van-icon": "/plugins/vant-weapp/dist/icon/index",
+    "van-row": "/plugins/vant-weapp/dist/row/index",
+    "van-col": "/plugins/vant-weapp/dist/col/index",
+    "van-card": "/plugins/vant-weapp/dist/card/index",
+    "van-field": "/plugins/vant-weapp/dist/field/index",
+    "van-cell": "/plugins/vant-weapp/dist/cell/index",
+    "van-cell-group": "/plugins/vant-weapp/dist/cell-group/index",
+    "van-dialog": "/plugins/vant-weapp/dist/dialog/index"
+  },
+  "tabBar": {
+    "position": "bottom",
+    "color": "#303133",
+    "selectedColor": "#e84325",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/images/index.png",
+        "selectedIconPath": "/images/index-active.png"
+      },
+      {
+        "pagePath": "pages/homework/homework",
+        "text": "作业帮",
+        "iconPath": "/images/homework.png",
+        "selectedIconPath": "/images/homework-active.png"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "text": "关于方正",
+        "iconPath": "/images/about.png",
+        "selectedIconPath": "/images/about-active.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我",
+        "iconPath": "/images/me.png",
+        "selectedIconPath": "/images/me-active.png"
+      }
+    ]
+  }
+}

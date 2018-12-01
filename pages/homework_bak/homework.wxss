@@ -1,0 +1,74 @@
+/* pages/homework/homework.wxss */
+#history-content-scroll {
+  /* height: calc(100% - 120rpx); */
+  /* padding-top: 20rpx; */
+  /* margin-bottom: 100rpx; */
+  height: 100%;
+}
+
+#content-view {
+  padding-bottom: 100rpx;
+  color: #303133;
+}
+.avatar {
+  width:100%;
+}
+
+#history-content-scroll text {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 15rpx;
+  display: inline-block;
+  position: relative;
+}
+
+/* #history-content-scroll text::before {
+  content: '';
+  position: absolute;
+  left: -10rpx;
+  top: 10rpx;
+  width: 0;
+  height: 0;
+  border-top: 20rpx solid transparent;
+  border-right: 20rpx solid #fff;
+  border-bottom: 20rpx solid transparent;
+} */
+
+.content-image {
+  width:350rpx;
+  border-radius: 5px;
+}
+
+.history-content-item {
+  /* padding: 10rpx 100rpx 10rpx 20rpx; */
+}
+
+.homework-edit {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #f5f5f7;
+  padding: 10rpx;
+}
+
+input {
+  border-radius: 5px;
+  margin: 0 5rpx;
+  background: #fff;
+  padding: 5rpx 10rpx;
+  height: 70rpx;
+}
+
+.photo {
+  border: 1px solid #7f8389;
+  text-align: center;
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 20rpx;
+  position: relative;
+  top: 20rpx;
+}
+
+.photo .van-icon-photograph {
+  top: 2px;
+}

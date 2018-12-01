@@ -1,0 +1,25 @@
+/* pages/me/me.wxss */
+.header {
+  height: 150rpx;
+  background-color: #2db6eb;
+  position: relative;
+}
+
+.header .avatar {
+  width: 40px;
+  position: absolute;
+  left: 50rpx;
+  top: 10rpx;
+}
+
+.header .nickname {
+  position: absolute;
+  left: 160rpx;
+  top: 26rpx;
+  color: #fff;
+  font-size: 36rpx;
+}
+
+ .logout .van-cell {
+  color: #e84325;
+}

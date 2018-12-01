@@ -1,0 +1,45 @@
+<!--pages/homework/homework.wxml-->
+
+
+<scroll-view id='history-content-scroll' scroll-y="true">
+  <view id='content-view' >
+    <view class='history-content-item' wx:for="{{content}}" wx:key="index">
+      <van-row gutter="0">
+          <!-- <van-col span="4">
+              <image class='avatar' src='/images/local/avatar.png' mode='widthFix'/>
+          </van-col> -->
+          <van-col span="20" offset="2">
+              <block wx:if="{{item.type == 'text'}}">
+                <text selectable>{{item.text}}</text>
+              </block>
+              <block wx:if="{{item.type == 'photo'}}">
+                <image bindtap="preview" src='{{item.url}}' data-list="{{item.url}}" data-src="{{item.url}}" class='content-image' mode='widthFix'></image>
+              </block>
+
+              <block wx:if="{{item.type == 'time'}}">
+                <view class='time-tip'>
+                  <label>{{item.text}}</label>
+                </view>
+              </block>
+
+         
+          </van-col>
+      </van-row>
+    </view>
+  </view>
+
+ 
+</scroll-view>
+
+<view class="homework-edit">
+  <van-row gutter="10">
+    <van-col span="20">
+      <input bindconfirm="sendHomework" value='{{text}}' placeholder='发送今天的作业'/>
+    </van-col>
+    <van-col span="4">
+      <view class='photo' catchtap='sendPhoto'>
+        <van-icon name="photograph" color='#7f8389' />
+      </view>
+    </van-col>
+  </van-row>
+</view>
