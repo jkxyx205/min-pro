@@ -1,2 +1,64 @@
 <!--about.wxml-->
-<text>about.wxml</text>
+<image src='/images/local/1.jpg' class='slider' mode='widthFix'></image>
+<view class='block'>
+  <view class='body'>
+    <van-row>
+      <van-col span="20">
+        <view class='contact-item'>
+          <van-icon name="contact" /><text>罗老师</text>
+        </view>
+        <view class='contact-item'>
+          <van-icon name="phone" /><text>18136411015</text>
+        </view>
+        <view class='contact-item'>
+          <van-icon name="location" /><text>苏州市吴中区郭巷街道郭新西路170号</text>
+        </view>
+      </van-col>
+      <van-col span="4">
+        <image src='/images/logo.png' class='logo' mode='widthFix'></image>
+      </van-col>
+    </van-row>
+
+    <view class='contact-bar'>
+    <van-row>
+      <van-col span="6">
+      <van-button plain type="primary" size='small'bind:click="makePhoneCall">拨打号码</van-button>
+      </van-col>
+      <van-col span="6">
+      <van-button plain type="primary" size='small' bind:click="setClipboardData">加我微信</van-button>
+      </van-col>
+      <van-col span="6">
+      <van-button plain type="primary" size='small' bind:click="addContact">存通讯录</van-button>
+      </van-col>
+      <van-col span="6">
+      <van-button plain type="primary" size='small' open-type='share'>转发</van-button>
+      </van-col>
+    </van-row>
+  </view>
+
+  </view>
+</view>
+
+<view class='block'>
+  <view class='header'>机构简介</view>
+  <view class='body detail info'>
+  方正教育，全名苏州方正启航文化艺术培训有限公司，位于苏州市吴中区郭巷街道郭新西路170号。现在有40多名中小学生，主要项目有晚托班，书法培训，一对一。
+  </view>
+</view>
+
+<view class='block env'>
+  <view class='header'>机构环境</view>
+  <view class='body'>
+    <view class='env-image-item'>
+      <image src='/images/local/2.jpg'></image>
+    </view>
+    <view class='env-image-item'>
+      <image src='/images/local/1.jpg'></image>
+    </view>
+    <view class='env-image-item'>
+      <image src='/images/local/3.jpg'></image>
+    </view>
+  </view>
+</view>
+
+<fz-phone/>

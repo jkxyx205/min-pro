@@ -43,3 +43,5 @@
     </van-col>
   </van-row>
 </view>
+
+<fz-phone/>

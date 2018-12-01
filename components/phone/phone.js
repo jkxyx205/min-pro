@@ -1,13 +1,17 @@
-// about.js
+// components/phone/phone.js
 Page({
 
   /**
    * Page initial data
    */
   data: {
-    phone: "18136411015"
-  },
 
+  },
+  makePhoneCall: function() {
+    wx.makePhoneCall({
+      phoneNumber: '18136411015',
+    })
+  },
   /**
    * Lifecycle function--Called when page load
    */
@@ -42,29 +46,7 @@ Page({
   onUnload: function () {
 
   },
-  makePhoneCall: function() {
-    var that = this;
-    wx.makePhoneCall({
-      phoneNumber: that.data.phone,
-    })
-  },
-  setClipboardData: function() {
-    wx.setClipboardData({
-      data: 'jiananjiaoxue',
-      success(res) {
-       wx.showToast({
-         title: '复制成功',
-       })
-      }
-    })
-  },
-  addContact: function() {
-    var that = this;
-    wx.addPhoneContact({
-      firstName: '罗老师',//联系人姓名
-      mobilePhoneNumber: that.data.phone,//联系人手机号
-    })
-  },
+
   /**
    * Page event handler function--Called when user drop down
    */

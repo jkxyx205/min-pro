@@ -1,0 +1,3 @@
+  <view class='wrapper'>
+      <van-icon name="chat" size='50rpx' custom-style='font-weight: blod; position: absolute; left: 50%; top: 50%; transform:translate(-50%,-50%);' bind:click="makePhoneCall"/>
+  </view>

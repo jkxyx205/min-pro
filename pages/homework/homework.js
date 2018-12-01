@@ -77,7 +77,7 @@ Page({
         const tempFilePaths = res.tempFilePaths;
         let data = [];
         tempFilePaths.forEach(function(path) {
-          data.push({ type: "photo", url: tempFilePaths[0]})
+          data.push({ type: "photo", url: path})
         });
         
         that.send(data);
@@ -94,15 +94,25 @@ Page({
     })
 
     //滚动到底部
-    const query = wx.createSelectorQuery()
-    query.select('#content-view').boundingClientRect()
-    query.selectViewport().scrollOffset()
-    query.exec(function (res) {
-      console.log(res[0].bottom);
+    // const query = wx.createSelectorQuery()
+    // query.select('#content-view').boundingClientRect()
+    // query.selectViewport().scrollOffset()
+    // query.exec(function (res) {
+    //   console.log(res[0].bottom);
+    //   wx.pageScrollTo({
+    //     scrollTop: res[0].bottom
+    //   })
+    // })
+
+    // 滚动到底部 it's great
+    wx.createSelectorQuery().select('#content-view').boundingClientRect(function (rect) {
+      // 使页面滚动到底部
       wx.pageScrollTo({
-        scrollTop: res[0].bottom
+        scrollTop: rect.height
       })
-    })
+    }).exec()
+
+
 
   },
   preview: function(event) {

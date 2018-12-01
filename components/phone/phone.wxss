@@ -1,0 +1,17 @@
+/* components/phone/phone.wxss */
+
+.wrapper {
+  position: fixed;
+  /* right: 80rpx;
+  bottom: 20rpx; */
+  right: 10rpx;
+  bottom: 120rpx;
+  color: #2db6eb;
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 80rpx;
+  -moz-box-shadow: 0px 0px 8px #c0c4cc;
+  -webkit-box-shadow: 0px 0px 8px #c0c4cc;
+  box-shadow: 0px 0px 8px #c0c4cc;
+  background-color: #fff;
+}

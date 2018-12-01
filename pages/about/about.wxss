@@ -1,1 +1,44 @@
 /* about.wxss */
+@import "/wxss/item.wxss";
+
+.slider {
+  vertical-align:top;
+  width: 100%;
+}
+
+.logo {
+  width: 100%;
+}
+
+.contact-item {
+  margin: 10rpx 0;
+}
+
+.contact-item .van-icon {
+  color: #2db6eb;
+  margin-right: 20rpx;
+  position: relative;
+  top:4rpx;
+}
+.contact-bar {
+  margin-top: 20rpx;
+}
+.contact-bar .van-button--plain.van-button--primary {
+  color: #2db6eb;
+  border-color: #2db6eb;
+}
+
+.contact-bar .van-col {
+  text-align: center;
+}
+
+
+.env image {
+  width: 100%;
+  border-radius: 10rpx;
+}
+
+.env-image-item {
+  padding-bottom: 10rpx;
+}
+

@@ -35,5 +35,8 @@ App({
   },
   globalData: {
     userInfo: null
+  },
+  makePhoneCall: function() {
+    wx.makePhoneCall({ phoneNumber: '18136411015' })
   }
 })

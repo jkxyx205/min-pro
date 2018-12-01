@@ -1,3 +1,5 @@
+<include src="/templates/phone.wxml"/>
+
 <swiper indicator-dots="{{indicatorDots}}"
   autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
   <block wx:for="{{imgUrls}}" wx:key="index">
@@ -58,4 +60,4 @@
 
 </view>
 
-
+<fz-phone/>

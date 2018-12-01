@@ -4,7 +4,8 @@
     "pages/about/about",
     "pages/me/me",
     "pages/homework/homework",
-    "pages/me/bind/bind"
+    "pages/me/bind/bind",
+    "components/phone/phone"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -20,7 +21,8 @@
     "van-field": "/plugins/vant-weapp/dist/field/index",
     "van-cell": "/plugins/vant-weapp/dist/cell/index",
     "van-cell-group": "/plugins/vant-weapp/dist/cell-group/index",
-    "van-dialog": "/plugins/vant-weapp/dist/dialog/index"
+    "van-dialog": "/plugins/vant-weapp/dist/dialog/index",
+    "fz-phone": "/components/phone/phone"
   },
   "tabBar": {
     "position": "bottom",
